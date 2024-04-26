@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Pangaea DevTools",
+    "version": "0.0.2",
+    "devtools_page": "pdt.html",
+    "description": "Extends Chrome's DevTools by adding many Pangea's security-related services to it.",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "cookies"
+    ]
+}
