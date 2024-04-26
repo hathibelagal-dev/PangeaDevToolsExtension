@@ -44,6 +44,8 @@ const getDomainData = async (token, domain, domainToCheck) => {
     const whoisData = domainIntelResponse2["result"]["data"];
     document.querySelector("#current_domain_registrar").value =
       whoisData["registrar_name"];
+    document.querySelector("#current_domain_con").value =
+      whoisData["created_date"];
     document.querySelector("#current_domain_country").value =
       whoisData["country"] || "Unknown";
     document.querySelector("#current_domain_ips").value =
@@ -70,6 +72,9 @@ const getURLData = async (token, domain) => {
       document.querySelector("#current_url_result").value =
         urlIntelResponse["summary"];
     } catch (e) {}
+  } else {
+    document.querySelector("#validation_status").innerHTML =
+        "You provided an invalid token or domain, or something else has gone wrong! Please try again.";
   }
   getDomainData(token, domain, url.hostname);
 };
