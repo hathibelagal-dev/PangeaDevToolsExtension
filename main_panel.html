@@ -1,12 +1,124 @@
 <html lang="en">
   <head>
     <meta name="color-scheme" content="light dark" />
-    <style>        
+    <link href="lib/simplegrid.css" rel="stylesheet" />
+    <style>
+      h3 {
+        margin-top: 1em;
+      }
+      #token_status {
+        margin-top: -0.9em;
+        font-size: 0.8em;
+      }
+      input {
+        text-indent: 10px;
+        width: 100%;
+      }
+      #token_holder {
+        width: 100%;
+      }
+      .col-2 {
+        margin-left: 0;
+      }
     </style>
+    <script src="background.js"></script>
   </head>
   <body>
-    <h3>Pangea Cloud Services Report</h3>    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Pangea Cloud Services Report</h3>
+        </div>
+      </div>
+      <div class="user_section">
+        <div class="row">
+          <div class="col-5">
+            <input id="token_holder" type="password" placeholder="Your token" />
+          </div>
+          <div class="col-5">
+            <input id="domain_holder" type="text" placeholder="Your domain" />
+          </div>
+          <div class="col-2">
+            <button id="update_button">Update</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="validation_status"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="url_section">
+        <div class="row">
+          <div class="col-3">URL:</div>
+          <div class="col-9">
+            <input id="current_url" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">URL Intel Request ID:</div>
+          <div class="col-9">
+            <input id="current_url_rid" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">URL Intel Status:</div>
+          <div class="col-9">
+            <input id="current_url_status" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">URL Intel Result:</div>
+          <div class="col-9">
+            <input id="current_url_result" type="text" />
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-3">Domain:</div>
+          <div class="col-9">
+            <input id="current_domain" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">Domain Intel Request ID:</div>
+          <div class="col-9">
+            <input id="current_domain_rid" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">Domain Intel Status:</div>
+          <div class="col-9">
+            <input id="current_domain_status" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">Domain Intel Result:</div>
+          <div class="col-9">
+            <input id="current_domain_result" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">Registrar:</div>
+          <div class="col-9">
+            <input id="current_domain_registrar" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">IPs:</div>
+          <div class="col-9">
+            <input id="current_domain_ips" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">Country:</div>
+          <div class="col-9">
+            <input id="current_domain_country" type="text" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main_panel.js"></script>
-    
   </body>
 </html>
