@@ -19,7 +19,7 @@ You can now press the **Load Unpacked** button and select the folder of the clon
 
 <img src="https://raw.githubusercontent.com/hathibelagal-dev/PangeaDevToolsExtension/main/Screenshot%202024-04-26%20at%2019.57.51.png" width="640"/>
 
-At this point the extension should be installed. You can now open any website and open **Developer Tools**. If you scroll horizontally throw the horizontal list of tabs, you should find **Pangea Cloud**.
+At this point the extension should be installed. You can now open any website and open **Developer Tools**. If you scroll horizontally through the list of tabs, you should find **Pangea Cloud**.
 
 <img src="https://raw.githubusercontent.com/hathibelagal-dev/PangeaDevToolsExtension/main/Screenshot%202024-04-26%20at%2020.01.29.png" width="640"/>
 
