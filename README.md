@@ -1,2 +1,2 @@
-# PangaeaDevToolsExtension
-Extends Chrome's DevTools by adding Pangaea's security-related services to it
+# PangeaDevToolsExtension
+Extends Chrome's DevTools by adding Pangea's security-related services to it
